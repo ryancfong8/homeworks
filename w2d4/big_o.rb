@@ -64,7 +64,7 @@ def clever_octopus(array)
   longest_word
 end
 
-puts clever_octopus(fish) == 'fiiiissshhhhhh'
+#puts clever_octopus(fish) == 'fiiiissshhhhhh'
 
 tiles_array = ["up", "right-up", "right", "right-down", "down", "left-down", "left",  "left-up" ]
 
