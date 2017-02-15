@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
     return user if user && BCrypt::Password.new(user.password_digest).is_password?(password)
-    nilf
+    nil
   end
 
   def self.generate_session_token
