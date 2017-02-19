@@ -1,0 +1,7 @@
+<h1>This is your account</h1>
+
+<p> Username: <%= @user.username %> </p>
+<p> Your sub: <% @user.subs.each do |sub| %>
+  <%= link_to "#{sub.title}", edit_sub_url %>
+  <% end %>
+</p>

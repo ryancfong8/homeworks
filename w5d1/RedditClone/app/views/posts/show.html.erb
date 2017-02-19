@@ -1,0 +1,12 @@
+<h1>This Is Your Post</h1>
+<p>Title <%= @post.title %></p>
+<p>url <%= @post.url %></p>
+<p>Content <%= @post.content %></p>
+<p>Subs <% @post.subs.each do |sub| %> <%= sub.title %> <% end %> </p>
+<p>Author <%= @post.author.username %></p>
+<p><%= link_to 'New Comment', new_post_comment_url(@post) %> </p>
+<p>Comments: <% @post.comments.each do |comment| %>
+  <%= comment.content %>
+  <br>
+  <% end %>
+</p>
