@@ -80,17 +80,29 @@ function fizzBuzz(array) {
   return fizzBuzzArr;
 }
 
-function isPrime (n) {
-  if (n < 2) { return false; }
+function isPrime(number) {
+  if (number < 2) { return false;}
 
-  for (let i = 2; i < n; i++) {
-    if (n % i === 0) {
-      return false;
-    }
+  for (var i=2; i<number; i++) {
+    if (number%i === 0)
+      {return false;}
   }
 
   return true;
+
 }
+
+// function isPrime (n) {
+// //   if (n < 2) { return false; }
+// //
+// //   for (let i = 2; i < n; i++) {
+// //     if (n % i === 0) {
+// //       return false;
+// //     }
+// //   }
+// //
+// //   return true;
+// // }
 
 function sumOfNPrimes (n) {
   let sum = 0;
