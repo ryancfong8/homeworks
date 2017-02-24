@@ -6,7 +6,7 @@ function hammerTime (time) {
   window.setTimeout(function () {
     alert('${time} is HAMMER TIME!');
   }, time);
-}
+}    
 
 const readline = require('readline');
 
